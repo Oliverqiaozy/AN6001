@@ -1,9 +1,14 @@
 <head>
-    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="/static/styles.css">
 </head>
 <body>
     <div class="container">
         <h2>AI web app</h2>
+        <h4>Enter your name</h4>
+        <form action="/main" method="post">
+            <input type="text" name="q" required>
+            <input type="submit" value="Enter">
+        </form>
     </div>
 </body>
